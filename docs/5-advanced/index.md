@@ -42,6 +42,7 @@ description: 深入学习 OpenCode 配置、Agent 系统、Skill、MCP 扩展、
 | [5.13 自定义工具](./13-custom-tools) | 工具封装技巧 | 实操 |
 | [5.14 GitHub 集成](./14-github) | 代码协作工作流 | 实操 |
 | [5.15 GitLab 集成](./15-gitlab) | 团队协作配置 | 实操 |
+| [5.20 上下文压缩](./20-compaction) | 智能管理超长对话 | 参考 |
 
 ## 🎒 你将收获
 

@@ -273,6 +273,7 @@ export default defineConfig({
           { text: '5.17 内置工具', link: '/5-advanced/17-tools' },
           { text: '5.18 代码格式化器', link: '/5-advanced/18-formatters' },
           { text: '5.19 LSP 服务器', link: '/5-advanced/19-lsp' },
+          { text: '5.20 上下文压缩', link: '/5-advanced/20-compaction' },
         ]
       },
       {
