@@ -3,6 +3,8 @@ title: 隐私政策
 description: OpenCode 中文教程网站的隐私政策，说明我们如何收集、使用和保护您的信息。
 ---
 
+<div class="privacy-page">
+
 # 隐私政策
 
 最后更新：2026 年 1 月
@@ -91,12 +93,14 @@ description: OpenCode 中文教程网站的隐私政策，说明我们如何收�
 
 ---
 
+</div>
+
 <style>
-h2 {
+.privacy-page h2 {
   margin-top: 2rem;
 }
 
-h3 {
+.privacy-page h3 {
   margin-top: 1.5rem;
 }
 </style>
