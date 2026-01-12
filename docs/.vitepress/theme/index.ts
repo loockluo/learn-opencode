@@ -14,6 +14,7 @@ import VideoEmbed from './components/VideoEmbed.vue'
 import NotFound from './components/NotFound.vue'
 import HeroCarousel from './components/HeroCarousel.vue'
 import AdSupport from './components/AdSupport.vue'
+import AdSlot from './components/AdSlot.vue'
 
 export default {
   extends: DefaultTheme,
@@ -21,7 +22,8 @@ export default {
     return h(DefaultTheme.Layout, null, {
       // https://vitepress.dev/guide/extending-default-theme#layout-slots
       'not-found': () => h(NotFound),
-      'home-hero-image': () => h(HeroCarousel)
+      'home-hero-image': () => h(HeroCarousel),
+      'doc-after': () => h(AdSlot)
     })
   },
   setup() {
