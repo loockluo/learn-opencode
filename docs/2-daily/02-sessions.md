@@ -215,9 +215,9 @@ AI 可能会做错事，撤销能帮你恢复。
 
 ## 下一课预告
 
-> 下一课我们学习 **[3.1 Plan vs Build：规划与执行](../3-workflow/01-plan-build.md)**。
+> 下一课我们学习 **[2.3 常用快捷键推荐](./03-shortcuts)**。
 >
 > 你会学到：
-> - Plan Agent 和 Build Agent 的区别
-> - 什么场景该用 Plan，什么该用 Build
-> - 用 <kbd>Tab</kbd> 键快速切换模式
+> - Leader 键机制（<kbd>Ctrl</kbd>+<kbd>X</kbd> 前缀）
+> - 15 个最实用的快捷键
+> - 程序员专属的 Readline 风格快捷键
