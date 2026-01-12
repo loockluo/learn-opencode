@@ -13,6 +13,7 @@ import AsciinemaPlayer from './components/AsciinemaPlayer.vue'
 import VideoEmbed from './components/VideoEmbed.vue'
 import NotFound from './components/NotFound.vue'
 import HeroCarousel from './components/HeroCarousel.vue'
+import AdSupport from './components/AdSupport.vue'
 
 export default {
   extends: DefaultTheme,
@@ -50,5 +51,6 @@ export default {
     app.component('PromptCard', PromptCard)
     app.component('AsciinemaPlayer', AsciinemaPlayer)
     app.component('VideoEmbed', VideoEmbed)
+    app.component('AdSupport', AdSupport)
   }
 } satisfies Theme

@@ -120,6 +120,8 @@
 
 👉 **<a href="https://learnopencode.com" target="_blank">learnopencode.com</a>**
 
+> 💡 在线版有少量广告用于维持服务器运营，介意可克隆到本地运行（无广告）
+
 ### 本地运行
 
 ```bash

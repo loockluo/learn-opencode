@@ -54,6 +54,13 @@ export default defineConfig({
         }
       }
     })],
+
+    // Google AdSense
+    ['script', {
+      async: 'true',
+      src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1238777311285568',
+      crossorigin: 'anonymous'
+    }],
   ],
 
   markdown: {
@@ -265,6 +272,7 @@ export default defineConfig({
             items: [
               { text: '5.12a 插件基础', link: '/5-advanced/12a-plugins-basics' },
               { text: '5.12b 插件进阶', link: '/5-advanced/12b-plugins-advanced' },
+              { text: '5.12c Hook 教程', link: '/5-advanced/12c-hooks' },
             ]
           },
           { text: '5.13 自定义工具', link: '/5-advanced/13-custom-tools' },
@@ -300,6 +308,7 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: '更新日志', link: '/changelog/' },
+          { text: 'v1.1.14', link: '/changelog/v1.1.14' },
           { text: 'v1.1.13', link: '/changelog/v1.1.13' },
           { text: 'v1.1.12', link: '/changelog/v1.1.12' },
           { text: 'v1.1.11', link: '/changelog/v1.1.11' },
@@ -318,7 +327,7 @@ export default defineConfig({
     ],
 
     footer: {
-      message: `<span title="未经授权，禁止将本站内容用于付费课程、付费专栏、出版物或其他商业用途。">本教程采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议 | © ${new Date().getFullYear()} LearnOpenCode</span>`,
+      message: `<span title="未经授权，禁止将本站内容用于付费课程、付费专栏、出版物或其他商业用途。">本教程采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议 | <a href="/privacy">隐私政策</a> | © ${new Date().getFullYear()} LearnOpenCode</span>`,
     },
 
     // 本地搜索

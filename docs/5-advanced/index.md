@@ -39,6 +39,7 @@ description: 深入学习 OpenCode 配置、Agent 系统、Skill、MCP 扩展、
 | [5.10 SDK 开发](./10a-sdk-basics) | 开发者扩展 | 延伸 |
 | [5.11 企业版功能](./11-enterprise) | 团队和企业特性 | 参考 |
 | [5.12 插件开发](./12a-plugins-basics) | 扩展功能开发 | 延伸 |
+| [5.12c Hook 教程](./12c-hooks) | 插件钩子/配置钩子全解 | 延伸 |
 | [5.13 自定义工具](./13-custom-tools) | 工具封装技巧 | 实操 |
 | [5.14 GitHub 集成](./14-github) | 代码协作工作流 | 实操 |
 | [5.15 GitLab 集成](./15-gitlab) | 团队协作配置 | 实操 |
