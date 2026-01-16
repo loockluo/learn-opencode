@@ -88,7 +88,7 @@ choco install opencode
 
 ### Scoop（推荐）
 
-不需要管理员权限：
+推荐用普通用户权限运行：
 
 ```powershell
 scoop bucket add extras
@@ -96,9 +96,24 @@ scoop install extras/opencode
 ```
 
 ::: details 没装过 Scoop？
+**按顺序逐条运行**以下命令：
+
 ```powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+
+```powershell
 Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+```
+
+```powershell
+scoop install git
+```
+
+如果你的 PowerShell 是以**管理员身份**运行的，安装 Scoop 时需要改用：
+
+```powershell
+iex "& {$(irm get.scoop.sh)} -RunAsAdmin"
 ```
 :::
 

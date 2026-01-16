@@ -90,17 +90,35 @@ scoop install extras/opencode
 ```
 
 ::: details 没装过 Scoop？点这里展开安装步骤
-打开 **PowerShell**（不需要管理员），依次运行：
+打开 **PowerShell**（推荐普通用户权限），**按顺序逐条运行**以下命令：
+
+**第 1 步：允许运行脚本（只需执行一次）**
 
 ```powershell
-# 1. 允许运行脚本（只需执行一次）
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
 
-# 2. 安装 Scoop
+**第 2 步：安装 Scoop**
+
+```powershell
 Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 ```
 
-安装完成后，继续运行：
+::: warning 以管理员身份运行？
+如果你的 PowerShell 是以**管理员身份**运行的（窗口标题带"管理员"字样），上面的命令会报错。需要改用这个命令：
+
+```powershell
+iex "& {$(irm get.scoop.sh)} -RunAsAdmin"
+```
+:::
+
+**第 3 步：安装 Git（Scoop 需要 Git 来添加 bucket）**
+
+```powershell
+scoop install git
+```
+
+**第 4 步：安装 OpenCode**
 
 ```powershell
 scoop bucket add extras
@@ -173,6 +191,22 @@ opencode 1.1.6
 ## 遇到问题？
 
 如果安装过程中遇到问题（找不到命令、网络超时、权限不足等），请看 [1.2b 装不上怎么办？](./02b-install-troubleshoot)
+
+---
+
+## 🚀 想立刻体验？（可选）
+
+安装成功后，你可以直接启动 OpenCode 体验免费模型：
+
+```bash
+opencode
+```
+
+启动后，输入 `/models`，选择一个带 `-free` 后缀的免费模型（如 `opencode/glm-4.7-free`），然后发送任意消息即可对话。
+
+::: tip 提示
+免费模型无需注册账号、无需 API Key，适合快速体验。详见 [1.4a 免费模型](./04a-free-models)。
+:::
 
 ---
 
